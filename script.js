@@ -1,23 +1,12 @@
-let subject = ["A Curious cat","An AI Assistant","The programmer","A time traveller","A sleepy panda"];
-let action = ["solves a mystery", "writes a buggy code", "accidentally teleports", "eats too much pizza", "invents a new language"];
-let object = ["a hidden algorithm", "a top-secret project", "a futuristic device", "a parallel universe", "a mysterious code"];
-let preposition = ["for","with","about"];
-let endings = ["and accidentally breaks the internet!", "but forgets how it happened.", "which leads to unexpected consequences.", "causing chaos in the city.", "and discovers an ancient secret!"];
-
-let subjectLength = subject.length;
-let actionLength = action.length;
-let objectLength = object.length;
-let prepositionLength = preposition.length;
-let endingsLength = endings.length;
+const subject = ["A Curious cat", "An AI Assistant", "The programmer", "A time traveller", "A sleepy panda"];
+const action = ["uncovers", "creates", "hacks into", "discovers", "accidentally activates"];
+const object = ["a hidden algorithm", "a top-secret project", "a futuristic device", "a parallel universe", "a mysterious code"];
+const preposition = ["for", "with", "about"];
+const endings = ["and accidentally breaks the internet!", "but forgets how it happened.", "which leads to unexpected consequences.", "causing chaos in the city.", "and discovers an ancient secret!"];
 
 const randomMessage = () => {
-    let subjectMesage = subject[Math.floor(Math.random() * subjectLength)];
-    let actionMessage = action[Math.floor(Math.random() * actionLength)];
-    let objectMessage = object[Math.floor(Math.random() * objectLength)];
-    let prepositionMessage = preposition[Math.floor(Math.random() * prepositionLength)];
-    let endingsMessage = endings[Math.floor(Math.random() * endingsLength)];
-
-    return `${subjectMesage} ${actionMessage} ${objectMessage} ${prepositionMessage} ${endingsMessage}`;
-}
+    const getRandomElement = (arr) => arr[Math.floor(Math.random() * arr.length)];
+    return `${getRandomElement(subject)} ${getRandomElement(action)} ${getRandomElement(object)} ${getRandomElement(preposition)} ${getRandomElement(endings)}`;
+};
 
 console.log(randomMessage());
