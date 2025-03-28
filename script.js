@@ -1,6 +1,6 @@
 let subject = ["A Curious cat","An AI Assistant","The programmer","A time traveller","A sleepy panda"];
 let action = ["solves a mystery", "writes a buggy code", "accidentally teleports", "eats too much pizza", "invents a new language"];
-let object = ["a self-driving car", "a secret government file", "a talking parrot", "a quantum computer", "a lost treasure map"];
+let object = ["a hidden algorithm", "a top-secret project", "a futuristic device", "a parallel universe", "a mysterious code"];
 let preposition = ["for","with","about"];
 let endings = ["and accidentally breaks the internet!", "but forgets how it happened.", "which leads to unexpected consequences.", "causing chaos in the city.", "and discovers an ancient secret!"];
 
